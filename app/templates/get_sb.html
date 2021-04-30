@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>水表登记</h1>
+
+
+
+        <table border="1">
+        {% for sb in sbs %}
+            <tr>
+                <td>{{ sb.userNo }}</td>
+                <td>{{ sb.username }}</td>
+                <td>{{ sb.deviceNo}}</td>
+                <td>{{ sb.sAddr}}</td>
+                <td>{{ sb.remark}}</td>
+                <td>{{ sb.date}}</td>
+                <td><a href="/sb/his/{{ sb.sbid }}">状态维护</a></td>
+                <td><a href="/sb/edit/{{ sb.sbid }}">资料修改</a></td>
+
+            </tr>
+        {% endfor %}
+        </table>
+
+{% endblock %}

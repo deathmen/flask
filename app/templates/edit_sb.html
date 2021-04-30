@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>水表修改</h1>
+   <form action="" method="POST">
+    <label>用户名</label>
+    <input type="text" name="username" value="{{ sb.username }}">
+    <label>户号</label>
+    <input type="text" name="userNo" value="{{ sb.userNo }}">
+    <label>设备编号</label>
+    <input type="text" name="deviceNo"  value="{{ sb.deviceNo }}">
+    <label>地址</label>
+    <input type="text" name="sAddr" value="{{ sb.sAddr }}">
+    <input   name="submit" type="submit" value="修改">
+       <input  name="submit" type="submit" value="删除">
+</form>
+{% endblock %}

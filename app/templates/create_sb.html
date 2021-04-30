@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>水表登记</h1>
+   <form action="" method="POST">
+    <label>用户名</label>
+    <input type="text" name="username">
+    <label>户号</label>
+    <input type="text" name="userNo">
+    <label>设备编号</label>
+    <input type="text" name="deviceNo">
+    <label>地址</label>
+    <input type="text" name="sAddr">
+    <input id="submit" name="submit" type="submit" value="创建">
+</form>
+{% endblock %}
